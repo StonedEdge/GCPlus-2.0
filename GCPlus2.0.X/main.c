@@ -108,9 +108,10 @@ void main(void) {
     inBut.PORTB = PORTB;
     inBut.PORTC = PORTC;
 
-    configInit();
+configInit();
     if (config.triggersMode == TRIG_MODE_ANALOG) {
         ANSELC |= 0x18; //Enable analog on triggers
+        WPUC &= ~0x18; //Disable weak pullups on triggers
     }
 
     ADCInit(config.SXChan, config.SYChan, config.CXChan, config.CYChan);

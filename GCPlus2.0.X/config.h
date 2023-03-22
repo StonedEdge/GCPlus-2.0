@@ -72,6 +72,10 @@ typedef struct {
 
     //Triggers mode: 0: digital, referred to GND. 1: analog
     uint8_t triggersMode;
+	uint8_t LMin;
+    uint8_t LMax;
+	uint8_t RMin;
+    uint8_t RMax;
 } config_t;
 
 extern config_t config;

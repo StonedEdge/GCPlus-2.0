@@ -127,6 +127,8 @@ uint8_t* buttonsGetMapByte1(void);
 */
 void buttonsBuildLUT(uint8_t* LUT, uint8_t minVal, uint8_t maxVal, uint8_t origin, uint8_t dz, uint8_t dzMode, uint8_t invert);
 
+void buildTriggerLUT(uint8_t* LUT, uint8_t minVal, uint8_t maxVal);
+
 void buttonsBuildLUTs(void);
 
 #endif

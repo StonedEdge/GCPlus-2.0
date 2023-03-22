@@ -73,8 +73,12 @@ void configSetDefault(void) {
     //Rumble
     config.rumbleIntensity = 0xFF;
 
-    //Triggers mode
+//Triggers mode
     config.triggersMode = TRIG_MODE_DIGITAL;
+    config.LMin = 0x00;
+    config.LMax = 0xFF;
+    config.RMin = 0x00;
+    config.RMax = 0xFF;
 }
 
 void configFlashAll(void) {
